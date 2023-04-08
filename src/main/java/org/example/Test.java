@@ -3,15 +3,15 @@ package org.example;
 public class Test {
 
     public static void main(String[] args) {
-//        testSpeak();
-//        testPresentation();
-//        testDrink();
-//        testGetName();
+        testSpeak();
+        testPresentation();
+        testDrink();
+        testGetName();
 
     }
 
     public static void testSpeak() {
-        new Human("Hermann").speak();
+        new Human("Huma").speak();
     }
     public static void testPresentation() {
         new Human("Hermann").presentation();

@@ -30,7 +30,7 @@ public class Cowboy extends Human{
     }
 
     void shoot(Brigand brigand){
-        System.out.println("The " + this.trait + " " + this.name + " shoot on " + brigand.name + ". PEW PEW !");
+        System.out.println("-- The " + this.trait + " " + this.name + " shoot on " + brigand.name + ". PEW PEW ! --");
     }
 
     void shout() {

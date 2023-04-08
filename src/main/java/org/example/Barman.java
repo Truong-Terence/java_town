@@ -8,4 +8,17 @@ public class Barman extends Human{
         this.drink = "wine";
         this.barName = "At " + this.name;
     }
+
+    void speak(String sentence) {
+        System.out.println(this.name + " - " + sentence + " Coco.");
+    }
+    @Override
+    void presentation() {
+        super.presentation();
+        System.out.println("Welcome to : '" + this.barName + "'s'");
+    }
+    @Override
+    void drink() {
+        super.drink();
+    }
 }
