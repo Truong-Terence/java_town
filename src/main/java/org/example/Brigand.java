@@ -14,6 +14,10 @@ public class Brigand extends Human{
         isPrisoner = false;
     }
 
+    @Override
+    void getName() {
+        System.out.println(this.name + " the " + this.look);
+    }
 
     void captureLady(Lady lady) {
         lady.getCaught();

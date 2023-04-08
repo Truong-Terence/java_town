@@ -10,6 +10,11 @@ public class Lady extends Human {
         isCaught = false;
     }
 
+    @Override
+    void getName() {
+        System.out.println("Miss"+ " " + this.name);
+    }
+
     void getCaught() {
         this.isCaught = true;
         System.out.println("Here we go again");

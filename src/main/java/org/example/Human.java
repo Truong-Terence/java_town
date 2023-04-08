@@ -21,13 +21,11 @@ public class Human {
         System.out.println("Ah ! A gud old " + this.drink + "! GLOUPS !");
     }
 
-    String getName(){
-
-        return this.name;
+    void getName(){
+        System.out.println(this.name);
     }
 
-    String getDrink() {
-
-        return this.drink;
+    void getDrink() {
+        System.out.println(this.drink);
     }
 }
