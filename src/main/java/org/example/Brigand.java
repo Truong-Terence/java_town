@@ -8,7 +8,8 @@ public class Brigand extends Human{
     int nbLady;
     Brigand(String name) {
         super(name);
-        look = "Bad";
+        this.drink = "villageoise";
+        look = "bad";
         nbLady = 0;
         bounty = 100;
         isPrisoner = false;
@@ -16,12 +17,19 @@ public class Brigand extends Human{
 
     @Override
     void getName() {
-        System.out.println(this.name + " the " + this.look);
+        System.out.println(this.name + " - " + this.name + " the " + this.look);
+    }
+
+    @Override
+    void presentation() {
+        super.presentation();
+        System.out.println(this.name + " - I seam " + this.look + "and I've taken' " + this.nbLady + "ladies !");
+        System.out.println(this.name + " - My bounty is worth " + this.bounty + " !");
     }
 
     void captureLady(Lady lady) {
         lady.getCaught();
-        System.out.println("Ah ah ! " + lady.name + ", you're mine now.");
+        System.out.println(this.name + " - " + this.name + " - Ah ah ! " + lady.name + ", you're mine now.");
     }
 
     void getPrisoner() {

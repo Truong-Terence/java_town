@@ -6,23 +6,30 @@ public class Lady extends Human {
     String hero;
     Lady(String name, String dressColor) {
         super(name);
+        this.drink = "milk";
         this.dressColor = dressColor;
         isCaught = false;
     }
 
     @Override
     void getName() {
-        System.out.println("Miss"+ " " + this.name);
+        System.out.println(this.name + " - Miss"+ " " + this.name);
+    }
+
+    @Override
+    void presentation() {
+        super.presentation();
+        System.out.println(this.name + " - " + this.dressColor);
     }
 
     void getCaught() {
         this.isCaught = true;
-        System.out.println("Here we go again");
+        System.out.println(this.name + " - Here we go again");
     }
 
     void getReleased() {
         this.isCaught = false;
-        System.out.println("Thank you " + hero);
+        System.out.println(this.name + " - Thank you " + hero);
     }
 
     void getDressColor() {

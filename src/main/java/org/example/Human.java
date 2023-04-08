@@ -6,7 +6,7 @@ public class Human {
 
     Human(String name) {
         this.name = name;
-        this.drink = "Water";
+        this.drink = "water";
     }
 
     void speak() {
@@ -14,11 +14,11 @@ public class Human {
     }
 
     void presentation() {
-        System.out.println("Hello, " + this.name + ", I love " + this.drink + ".");
+        System.out.println(this.name + " - Hello, " + this.name + ", I love " + this.drink + ".");
     }
 
     void drink() {
-        System.out.println("Ah ! A gud old " + this.drink + "! GLOUPS !");
+        System.out.println(this.name + " - Ah ! A gud old " + this.drink + "! GLOUPS !");
     }
 
     void getName(){

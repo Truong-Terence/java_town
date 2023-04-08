@@ -5,20 +5,27 @@ public class Cowboy extends Human{
     String trait;
     Cowboy(String name) {
         super(name);
+        this.drink = "whisky";
         this.popularity = 0;
-        this.trait = "Vaillant";
+        this.trait = "valiant";
+    }
+
+    @Override
+    void presentation() {
+        super.presentation();
+        System.out.println(this.name + " - " + "I'm " + this.trait + " and my popularity IS OVER " + this.popularity + " !!");
     }
 
     void freeLady(Lady lady) {
         lady.hero = this.name;
-        System.out.println("Yeeeha " + lady.name + " !");
+        System.out.println(this.name + " - Yeeeha " + lady.name + " !");
         lady.getReleased();
         this.popularity += 1;
     }
 
     void getBrigand(Brigand brigand) {
         brigand.getPrisoner();
-        System.out.println("Damned, I'm done !" + this.name + ", you got me !");
+        System.out.println(brigand.name + " - " + this.name + ", you got me !");
         System.out.println(this.name + " got " + brigand.bounty + "$ on this catch !");
     }
 
@@ -27,6 +34,6 @@ public class Cowboy extends Human{
     }
 
     void shout() {
-        System.out.println("Take this, rascal !");
+        System.out.println(this.name + " - Take this, rascal !");
     }
 }
