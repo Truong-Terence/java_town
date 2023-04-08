@@ -6,7 +6,7 @@ public class Test {
 //        testSpeak();
 //        testPresentation();
 //        testDrink();
-        testGetName();
+//        testGetName();
 
     }
 
@@ -22,4 +22,5 @@ public class Test {
     public static void testGetName() {
         new Human("Hermann").getName();
     }
+
 }

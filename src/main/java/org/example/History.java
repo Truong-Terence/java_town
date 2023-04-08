@@ -7,6 +7,7 @@ public class History {
         new Human("Hermann").drink();
         new Brigand("Jackson").getName();
         new Lady("Frizz", "blue").getName();
+        System.out.println(new Barman("Polo").barName);
     }
 
 }
