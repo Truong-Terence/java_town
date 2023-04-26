@@ -16,6 +16,8 @@ public class History {
 //        System.out.println("Pablo bounty : " + pablo.bounty);
 //        new Sheriff("Periph").lookForBrigand(pablo);
 //        System.out.println("Pablo bounty : " + pablo.bounty);
+//        Cowboy Clint = new Sheriff("Clint");
+//        System.out.println(Clint.name);
     }
 
 }

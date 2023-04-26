@@ -36,4 +36,7 @@ public class Brigand extends Human{
         isPrisoner = true;
     }
 
+    public short getBounty() {
+        return bounty;
+    }
 }
